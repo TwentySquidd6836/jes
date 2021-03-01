@@ -24,8 +24,14 @@
         <label>Quantity: <input name="quantity" type="number" value="1"></label>
         <button>Get</button>
     </form>
-
-    <c:if test="${total ne null and total ne 0}">
+    <hr>
+    <form action="nullOrder">
+      <button>Cancel Order</button>
+    </form>
+     <c:if test="${warning ne null}">
+     <p> ${warning} </p>
+     </c:if>
+     <c:if test="${total ne null and total ne 0}">
         <p>You have ${total} of our vinyls in order. Thank you!</p>
         <h2>Send the order</h2>
         <form action="buyNull">

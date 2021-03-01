@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 <%@ page import="java.time.LocalTime"%>
 <!DOCTYPE html>
 <html>
@@ -9,15 +10,15 @@
 <link rel="stylesheet" type="text/css" href="/jes/css/simple.css">
 </head>
 <body>
-    <!-- HTML comment -->
-    <h1>
-        <%
-            out.print(LocalTime.now());
-        %>
-    </h1>
-    <%-- JSP comment --%>
-    <p>
-        Back <a href="/jes/index.html">home</a>
-    </p>
+	<!-- HTML comment -->
+	<h1>
+		<%
+		out.print(LocalTime.now());
+		%>
+	</h1>
+	<%-- JSP comment --%>
+	<p>
+		Back <a href="/jes/index.html">home</a>
+	</p>
 </body>
 </html>
